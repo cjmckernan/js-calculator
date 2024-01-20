@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+    
+  body {
+    margin: 0;
+    padding: 0;
+  
+}
+
+.calc-grid {
+    display: grid;
+  
+    grid-template-areas:
+        "results results results results"
+        "clear clear backspace  divide"
+        "num-seven num-eight num-nine multi"
+        "num-four num-five num-six minus"
+        "num-one num-two num-three plus"
+        "num-zero num-zero num-zero equals";
+}
+
+.calc-container{
+    border-radius: 1px;
+    margin: auto;
+    margin-top: 5px;
+    width: 300px;
+}
+
+.results {
+    color: white;
+    display: flex;
+    justify-content: right;
+    background-color: black;
+    grid-area: results;
+    padding-right: 5px;
+
+}
+
+.button-click {
+    border: 1px solid black
+}
+
+.operation {
+    color: white;
+    background-color: #df974c;
+
+    &:hover {
+        background-color: #d07a3a; 
+    }
+}
+
+.clear {
+    grid-area: clear;
+}
+
+.backspace {
+    grid-area: backspace;
+}
+
+.divide {
+    grid-area: divide;
+}
+
+.num-seven {
+    grid-area: num-seven;
+}
+
+.num-eight {
+    grid-area: num-eight;
+}
+
+.num-nine {
+    grid-area: num-nine;
+}
+
+.multi {
+    grid-area: multi;
+}
+
+.num-four {
+    grid-area: num-four;
+}
+
+.num-five {
+    grid-area: num-five;
+}
+
+.num-six {
+    grid-area: num-six;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.num-one {
+    grid-area: num-one;
+}
+
+.num-two {
+    grid-area: num-two;
+}
+
+.num-three {
+    grid-area: num-three;
+}
+
+.plus {
+    grid-area: plus;
+}
+
+.num-zero {
+    grid-area: num-zero;
+}
+
+.equals {
+    grid-area: equals;
+}
